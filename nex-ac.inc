@@ -50,7 +50,11 @@
 #endif
 
 #if !defined _nex_ac_lang_included
-	#include "nex-ac_en.lang"	//Localization
+	#tryinclude "nex-ac_en.lang"	//Localization
+#endif
+
+#if !defined _nex_ac_lang_included
+	#tryinclude <nex-ac_en.lang>	//Localization
 #endif
 
 #define	NEX_AC_VERSION				"1.9.60"
